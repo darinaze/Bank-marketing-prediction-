@@ -49,17 +49,14 @@ We list only those results where training accuracy and testing accuracy are near
 | LightGBM (Hyperopt)        | 0.8058  | 0.82 | 0.95 | 0.84 | 0.89  | 0.35  | 0.66  | 0.46   |
 
 ---
-
-## SHAP Analysis
-
 - **Most important features:**
-  - `duration` – longer calls increase probability of "yes".
+  - `euribor3m` – the interest rate is the strongest driver: higher rates make deposits more attractive.
   - `campaign` – many repeated calls decrease probability of "yes".
-  - `poutcome` – success in previous campaigns increases probability.
-  - `month` – some months (March, September) are more favorable.
+  - `poutcome_success` – success in previous campaigns increases probability.
+  - `month` – some months (March, September, October) are more favorable.
 
-- **Interpretation:**  
-  The model learns that **longer conversations and fewer repeated contacts** are strong indicators of success.  
+- **Interpretation:**
+  The model learns that **favorable economic conditions and fewer repeated contacts** are strong indicators of success.
   SHAP confirms that the business rule for `campaign` is consistent with model behavior.
 
 ---
