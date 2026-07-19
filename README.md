@@ -30,7 +30,7 @@ The classification goal is to predict whether a client will subscribe to a term 
 
 4. **Threshold Tuning**
    - Default threshold 0.5 was adjusted (0.55–0.65) to balance FP/FN.  
-   - * Business rule: if `campaign > 5`, prediction forced to "no" (to reduce unnecessary calls).  
+   - Business rule: if `campaign > 5`, prediction forced to "no" (to reduce unnecessary calls).  
 
 ---
 
