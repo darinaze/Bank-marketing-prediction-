@@ -19,8 +19,7 @@ The classification goal is to predict whether a client will subscribe to a term 
 2. **Models Tested**
    - Logistic Regression  
    - k-Nearest Neighbors  
-   - Decision Tree  
-   - Random Forest  
+   - Decision Tree   
    - LightGBM (baseline, tuned with RandomizedSearch, tuned with Hyperopt)
 
 3. **Evaluation Metrics**
@@ -31,7 +30,7 @@ The classification goal is to predict whether a client will subscribe to a term 
 
 4. **Threshold Tuning**
    - Default threshold 0.5 was adjusted (0.55–0.65) to balance FP/FN.  
-   - Business rule: if `campaign > 6`, prediction forced to "no" (to reduce unnecessary calls).  
+   - * Business rule: if `campaign > 5`, prediction forced to "no" (to reduce unnecessary calls).  
 
 ---
 
