@@ -1,4 +1,4 @@
-## Bank Marketing Dataset
+## Bank Marketing Campaign Prediction
 
 ## The Task
 The dataset used in this project is the **Bank Marketing Additional Full Dataset**, available on Kaggle:  
